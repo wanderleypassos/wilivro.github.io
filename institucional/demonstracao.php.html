@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WiLivro | Demonstrações dos jogos e Cursos Express Gratuitos</title>
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.wilivro.com.br/institucional/functions.js"></script>
+<script src='scripts/jquery-1.7.2.min.js' type='text/javascript'></script>
+<script src='scripts/jquery.spritely-0.6.js' type='text/javascript'></script>
+<script src='scripts/jquery.corner.js' type='text/javascript'></script>
+<script src='scripts/jquery.transit.js' type='text/javascript'></script>
+<script type="text/javascript" src="scripts/swfobject.js"></script>
+	<script>
+	
+	
+		function init(){
+			//left:13px
+		
+			
+	  		$('#texto1').blur();
+
+				
+		$('#txt01_header').fadeIn(5000);
+						
+					//})
+					//$('#div_adind_01').click(function(){
+						$("#foto_top").fadeIn(150);
+						 $('#foto_top').animate({
+							width:'200px',
+							height:'170px',
+							margin:'6px 3px',
+							opacity:'1'
+							
+						},700)
+						 $('#logo').sprite({
+								fps:30,
+								no_of_frames:120,
+								on_frame: { 
+                                119: function(obj) { 
+									$(obj).goToFrame(65);
+                 
+                                }
+                            }              
+				})
+
+
+    		function banner(){
+	    		$('#texto1').delay(500)
+				.animate({left: '162px',opacity:'1'	}, 500)
+				.delay(4000)
+				.animate({left: '388px',opacity:'0'	}, 500)
+				$('#imgBanner').animate({left:'0px'},500)
+				console.log('oi')
+				$('#texto2_1').delay(5500)
+							.animate({fontSize:'24px',opacity:'1'})
+							.delay(4000)
+							.animate({fontSize:'0px',opacity:'0'})
+				$('#texto2_2').delay(5500)
+							.animate({fontSize:'18px',opacity:'1'})
+							.delay(4000)
+							.animate({fontSize:'0px',opacity:'0'})
+				$('#texto2_3').delay(5500)
+							.animate({fontSize:'43px',opacity:'1'})
+							.delay(4000)
+							.animate({fontSize:'0px',opacity:'0'})
+				
+			}
+				var deg = 0;
+				function rodar(){
+					deg += 2;
+					$('#raio').animate({rotate: deg.toString() + 'deg'}, 30);
+					console.log('oi');
+				}
+				function giro(){
+				setInterval(rodar,30);	
+				}
+				giro();
+				banner();
+			setInterval(banner,11000);
+//			girar();
+
+		}
+		</script>
+	
+
+<script type="text/javascript">
+  
+  var div = "cont_form_cursos_gratis_b";  
+   
+  function abrir_form(){ // função aparecer  
+     document.getElementById(div).style.display = "block";  
+  }  
+  
+  function fechar_form(){  // função ocultar  
+   document.getElementById(div).style.display = "none";  
+  }  
+
+function sel_curso(cur) {
+ 	 document.sparceria.curso.value = cur;
+	 
+	 var curso = "";
+	 
+	 switch(cur) {
+	 	case 1: curso = "Código de Conduta ABCID"; break;
+		case 11: curso = "Concurso Correios 2011"; break;
+		case 4: curso = "Educação Ambiental"; break;
+		case 9: curso = "Formação para o Trabalho Autônomo"; break;
+		case 2: curso = "Internet"; break;
+		case 8: curso = "Introdução a Lógica para Emprego e Concurso"; break;
+		case 5: curso = "Matemática para Emprego e Concurso"; break;
+		case 10: curso = "Nova Ortografia"; break;
+		case 6: curso = "Português para Emprego e Concurso"; break;
+		case 3: curso = "Preparação para o Emprego"; break;
+		case 7: curso = "Qualidade no Atendimento"; break;
+	 }
+	 
+	 document.getElementById("txtLabelCurso").innerHTML = curso;
+  }
+
+</script>
+
+<!-- Google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19331610-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+				$(function(){
+					//$('#div_adind_01').click(function(){
+						
+						
+					//})
+				});	
+				
+			</script>
+		<style>
+			#area_banner{
+				width: 390px;
+				height: 121px;
+				position:relative;
+				display: block;
+				background-color: #4e7bb3;
+				overflow:hidden;
+			}
+			#imgBanner{
+				width: 158px;
+				background-image: url('imagens/imagem_banner2.png');
+				height: 118px;
+				position: absolute;
+				top:7px;
+				left:-156px;
+			}
+			#raio{
+				background-image: url("imagens/mc_raio.png");
+				width: 400px;
+				height: 400px;
+				position: absolute;
+				opacity: 0.1;
+				left: 98px;
+				margin-top: -134px;;
+			}
+			#texto1{
+				position: absolute;
+				color: white;
+				font-size: 23px;
+				font-family: sans-serif;
+				top: 53px;
+				width: 249px;
+				font-style: italic;
+				left: 388px;
+				opacity: 0;
+				}
+			
+			#texto2_1{
+				position: absolute;
+				color: white;
+				font-size: 0;
+				font-family: sans-serif;
+				width: 198px;
+				font-style: italic;
+				top: 20px;
+				opacity: 0;
+				left: 169px;
+			}
+			#texto2_2{
+				position: absolute;
+				color: white;
+				font-size: 0;
+				font-family: sans-serif;
+				top: 50px;
+				width: 198px;
+				font-style: italic;
+				left: 176px;
+				opacity: 0;
+			}
+			#texto2_3{
+			position: absolute;
+			color: #F8E13B;
+			font-size: 0px;
+			font-family: sans-serif;
+			top: 51px;
+			font-weight: bold;
+			width: 198px;
+			font-style: italic;
+			left: 214px;
+			opacity: 0;
+			}
+			
+
+		</style>
+
+</head>
+
+<body onLoad='init()'>
+<div id="main">
+	<div id="conteudo">
+
+<!-- Início da div cont_principal -->
+    <div id="cont_header">
+<!-- HEADER -->    	
+      <div id="header">
+      
+        <div id="logo">
+
+			<!--<div id="myAlternativeContent">
+				<script type="text/javascript">
+				var flashvars = {};
+				var params = {};
+				params.quality = "best";
+				params.scale = "noscale";
+				params.wmode = "transparent";
+				var attributes = {};
+				swfobject.embedSWF("flash/logo_top_v2.swf", "myAlternativeContent", "150", "150", "8", false, flashvars, params, attributes);
+				</script>
+			</div>-->
+
+		</div>
+        <div id="txt01_header" style="display:none">
+		A TECNOLOGIA A SERVIÇO DA FORMAÇÃO PROFISSIONAL
+			<!--<div id="myAlternativeContent_titulo">
+				<script type="text/javascript">
+				var flashvars = {};
+				var params = {};
+				params.quality = "best";
+				params.scale = "noscale";
+				params.wmode = "transparent";
+				var attributes = {};
+				swfobject.embedSWF("flash/titulo_top.swf", "myAlternativeContent_titulo", "500", "45", "8", false, flashvars, params, attributes);
+				</script>
+			</div>-->
+		</div>
+        
+        
+
+       <div id="area_aluno"><a href="http://geralearning.geranegocio.com.br" target="_blank"><img src="imagens/ico_area_aluno.png" /></a></div>
+        
+<!-- MENU TOP -->    	
+        
+    		<div id="menu">
+    			<ul>
+					<li><a href="index.php.html" class="btn_inicio"></a></li>
+                    
+					<li><a href="Javascript:void(0)" class="btn_01_on"></a></li>
+
+
+					<li><a href="demonstracao.php.html" class="btn_demo"></a></li>        
+					<li><a href="blogs.php.html" class="btn_02"></a></li>
+					<li><a href="aplicativos.php.html" class="aplicativos"></a></li>
+					<li><a href="institucional_01.php.html" class="btn_03"></a></li>
+					<li><a href="projetos.php.html" class="btn_04"></a></li>
+					<li><a href="parcerias.php.html" class="btn_05"></a></li>
+					<li><a href="contatos.php.html" class="btn_06"></a></li>
+    			</ul>
+    		</div>      </div>
+
+
+
+
+<!-- FOTO TOP -->
+
+
+        <div id="foto_top">
+			<div id="myAlternativeContent_foto" style="display:none !important;">
+				<!--<script type="text/javascript">
+				var flashvars = {};
+				var params = {};
+				params.quality = "best";
+				params.scale = "noscale";
+				params.wmode = "transparent";
+				var attributes = {};
+				swfobject.embedSWF("flash/foto_top.swf", "myAlternativeContent_foto", "185", "162", "8", false, flashvars, params, attributes);
+				</script>-->
+			</div>
+		</div>
+    </div>
+<!-- CONTEUDO HEADER -->
+
+
+<!-- CONTEUDO HOME -->
+   
+    <div id="cont_demo">
+      <div id="col_esq_demo">
+        <a name="inclusao_digital"><!-- ancora --></a>
+        <span class="img_demo"><img src="imagens/img_demo.jpg" /></span>
+        <br clear="all" /><br />
+        <span class="sub_tit_demo">CURSOS PARA CONCURSOS</span>
+        <br clear="all" />
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=portugues" target="blank" class="btn_lateral_demo">Português para Concurso e Emprego</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=matematica" target="blank" class="btn_lateral_demo">Matemática para Concurso e Emprego </a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=logica" target="blank" class="btn_lateral_demo">Introdução a Lógica para Concurso e Emprego</a>
+		</span>			
+
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=nova_ortografia" target="blank" class="btn_lateral_demo">Nova Ortografia</a>
+		</span>			
+
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=educacaoambiental" target="blank" class="btn_lateral_demo">Educação Ambiental</a>
+		</span>			
+
+
+
+       <br clear="all" />
+       <span style="width:235px; height: 1px; border-bottom: 2px dotted #e6e6e6; display: block; margin: 20px 0 20px 0;">&nbsp;</span> 	   
+
+        <span class="sub_tit_demo">CURSOS PARA NEGÓCIOS</span>
+        <br clear="all" />
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=mundonegocios" target="blank" class="btn_lateral_demo">Mundo dos Pequenos Negócios</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=turismo" target="blank" class="btn_lateral_demo">Negócio de Turismo</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=artesanato" target="blank" class="btn_lateral_demo">Artesanato como Negócio</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=empreendedorismo" target="blank" class="btn_lateral_demo">Empreendedorismo</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=planosemcorr" target="blank" class="btn_lateral_demo">Plano de Negócio</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=planocomcorr" target="blank" class="btn_lateral_demo">Elaborando o Plano de Negócio</a>
+		</span>			
+<!--
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Formação para o Trabalho Autônomo</a>
+		</span>			
+-->    
+     
+       <br clear="all" />
+       <span style="width:235px; height: 1px; border-bottom: 2px dotted #e6e6e6; display: block; margin: 20px 0 20px 0;">&nbsp;</span> 
+	   
+
+<!--
+        <span class="sub_tit_demo">LINGUA ESTRANGEIRA</span>
+        <br clear="all" />
+		
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Inglês Básico I, II e III</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Inglês Específico</a>
+		</span>			
+
+
+       <br clear="all" />
+       <span style="width:235px; height: 1px; border-bottom: 2px dotted #e6e6e6; display: block; margin: 20px 0 20px 0;">&nbsp;</span> 
+	   
+-->
+
+
+        <span class="sub_tit_demo">FORMAÇÃO PARA TRABALHO</span>
+        <br clear="all" />
+
+<!--		
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Preparação para o Emprego</a>
+		</span>			
+-->
+
+<!--
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Qualidade no Atendimento</a>
+		</span>			
+
+-->
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=cidadania" target="blank" class="btn_lateral_demo">Ética e Cidadania</a>
+		</span>			
+
+
+
+       <br clear="all" />
+       <span style="width:235px; height: 1px; border-bottom: 2px dotted #e6e6e6; display: block; margin: 20px 0 20px 0;">&nbsp;</span> 
+	   
+
+
+        <span class="sub_tit_demo">ARTE E CULTURA</span>
+        <br clear="all" />
+		
+		<span class="btn_lateral_demo_b">
+			<a href="demonstracao.php.html#" target="blank" class="btn_lateral_demo">Teoria Musical </a>
+		</span>			
+
+       <br clear="all" />
+       <span style="width:235px; height: 1px; border-bottom: 2px dotted #e6e6e6; display: block; margin: 20px 0 20px 0;">&nbsp;</span> 
+
+
+
+
+        <span class="sub_tit_demo">INFORMÁTICA</span>
+        <br clear="all" />
+		
+<!--
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Access 2003</a>
+		</span>			
+-->
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=excel" target="blank" class="btn_lateral_demo">Excel 2003</a>
+		</span>			
+
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=powerpoint" target="blank" class="btn_lateral_demo">Powerpoint 2003</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=windowsxp" target="blank" class="btn_lateral_demo">Windows XP</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=word" target="blank" class="btn_lateral_demo">Word 2003</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=calc" target="blank" class="btn_lateral_demo">OpenOffice Calc 2.0</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=impress" target="blank" class="btn_lateral_demo">OpenOffice Impress 2.0</a>
+		</span>			
+
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=softwarelivre" target="blank" class="btn_lateral_demo">Software livre</a>
+		</span>			
+
+<!--
+		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Letramento digital</a>
+		</span>			
+-->
+		<span class="btn_lateral_demo_b">
+			<a href="http://geralearning.geranegocio.com.br/telecentro/interface/default.asp?curso=internet" target="blank" class="btn_lateral_demo">Web 2.0</a>
+		</span>			
+
+<!--		<span class="btn_lateral_demo_b">
+			<a href="#" target="blank" class="btn_lateral_demo">Introdução a informática</a>
+		</span>			
+-->
+
+
+       <br clear="all" /><br />
+      </div>
+  
+
+      <div id="col_dir_demostracao">
+        
+<!-- CONTEUDO FORMULARIO -->
+			<a name=""><!-- ancora --></a>
+			
+			<div id="cont_form_cursos_gratis">
+			
+				<div id="banner_flash_loja">
+						<div id="area_banner">
+			 				<div id='texto1'>Conheça nossa loja</div>
+               					<div id='texto2'>
+                				<div id="texto2_1">Cursos a partir de</div>
+               			 		<div id="texto2_2">R$</div>
+                				<div id="texto2_3">32,90</div>
+                			</div>
+						<div id="raio"> </div>
+                		<div id="imgBanner"></div>
+               </div>
+            </div>
+					<!--<div id="myAlternativeContent_banner">
+						<script type="text/javascript">
+							var flashvars = {};
+							var params = {};
+							params.quality = "best";
+							params.scale = "noscale";
+							params.wmode = "transparent";
+							var attributes = {};
+							swfobject.embedSWF("flash/banner_demo_loja.swf", "myAlternativeContent_banner", "390", "121", "8", false, flashvars, params, attributes);
+						</script>
+					</div>-->
+				</div>	
+				<br clear="all" />
+		
+				<span class="area_txt_cursos_gratis" >	
+
+					<span style="width: 370px; display: block; font-size:14px;">Nesta página você tem acesso aos nossos "Cursos Express" gratuitos e as versões para demonstração.</span>
+					<br />
+					<span style="width: 310px; float:left; display: block; margin: 5px 0 0 0;">
+						Aqui você acessa nossos "Cursos Express" gratuitos. Estes cursos possuem 1 hora de duração que são destinadas a iniciar nossos usuários em um assunto específico.
+					</span>
+					<span style="width: 60px; float: right;"><img src="imagens/Seta_dir.png" /></span>
+
+					<br clear="all" /><br />
+
+					<span style="width: 60px; float:left; margin: 8px 0 0 0;"><img src="imagens/Seta_esq.png" /></span>
+
+					<span style="width: 310px; display: block; float: left;">
+						Aqui você verá todas as versões que estão disponíveis para demonstração. Elas constam de alguns exercícios que o levarão a conhecer os conteúdos utilizados em nossos cursos na íntegra.
+					</span>	
+				</span>
+					
+				
+				
+	  
+	</div>
+	
+    <div id="cont_form_cursos_gratis_b" style="display:none;">
+		
+      <span style="width:402px; height: 1px; border-bottom: 2px dotted #e6e6e6; display: block; margin: 0 0 30px 0; float:right;">&nbsp;</span> 
+		
+
+	  <a name="formulario_cursos_gratis"><!-- ancora --></a>      
+      
+	  <div id="cont_formulario_cursos_gratis">
+
+		
+
+        
+		<br clear="all" /><br />
+      </div>
+<!-- Fim da DIV formulario -->      
+         <br clear="all" />     
+    </div>      
+    
+<!-- FIM DO CONTEUDO FORMULARIO-->    
+        
+      </div>
+	  
+	  <div id="col_dir_gratis_demo">
+
+            <div style="width: 170px; float: left; padding: 0 0 0 25px; margin: 0 0 0 0; border-bottom:dotted 2px #e6e6e6">
+                <img src="imagens/logo_express.jpg" />
+                <div id="btn_emitir_cert"><ul><li><a href="emitir_certificado.php.html" class="btn_emitir"><!-- espaço --></a></li></ul></div>
+            </div>			
+
+	  	<a name="cursos_gratis"><!-- ancora --></a>
+        <!--<span class="sub_tit_demo" name="cursos_gratis">CURSOS GRÁTIS</span>-->
+        <span style="display: block; width: 190px; height: 220px; float: left; padding: 0; margin: 20px 0  0;">
+		
+
+
+<!-- ****************************                    Menu coluna da direita                    ******************************************* -->
+
+			
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(1)">Código de Conduta ABCID</a>
+			</span>
+
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(11)">Concurso Correios 2011</a>
+				<img style="margin-left:-30px; margin-top:8px" src="imagens/selo_novo.png" />
+			</span>
+
+			
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(4)">Educação Ambiental</a>
+			</span>			
+			
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(9)">Formação para o Trabalho Autônomo</a>
+			</span>
+			 
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(2)">Internet</a>
+			</span>		
+
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(8)">Introdução a Lógica para Emprego e Concurso</a>
+			</span>			
+
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(5)">Matemática para Emprego e Concurso</a>
+			</span>			
+			
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(10)">Nova Ortografia</a>
+			</span>		
+
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(6)">Português para Emprego e Concurso</a>
+			</span>		
+
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(3)">Preparação para o Emprego</a>
+			</span>			
+
+			<span class="btn_lateral_demo_c">
+				<a href="demonstracao.php.html#formulario_cursos_gratis" class="btn_lateral_demo" onclick="abrir_form();sel_curso(7)">Qualidade no Atendimento</a>
+			</span>
+
+
+			<br clear="all" />
+
+		</span> 
+		
+
+	   </div>
+
+	    
+    <br clear="all" />
+    </div>
+<!-- FIM DO CONTEUDO HOME -->
+	
+
+
+<!-- Fim da div cont_principal -->
+	</div> 
+<!-- Fim da div conteudo -->  
+
+
+    <div id="conteudo_rdp">
+        <div id="rdp">
+          <img src="imagens/txt_rdp.jpg" />
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
