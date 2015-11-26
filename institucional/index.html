@@ -1,405 +1,156 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>WiLivro | Tecnologia a Serviço da Educação</title>
-<meta name="robots" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-<script type="text/javascript" src="http://www.wilivro.com.br/institucional/functions.js"></script>
-<script type="text/javascript" src="scripts/swfobject.js"></script>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script src='scripts/jquery-1.7.2.min.js' type='text/javascript'></script>
-<script src='scripts/jquery.spritely-0.6.js' type='text/javascript'></script>
-<script src="scripts_flash/AC_RunActiveContent.js" type="text/javascript"></script>
+    <head>
+        <title>WiLivro | Tecnologia a Serviço da Educação</title>
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <script type="text/javascript" src="http://www.wilivro.com.br/institucional/functions.js"></script>
+        <script type="text/javascript" src="scripts/swfobject.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src='scripts/jquery-1.7.2.min.js' type='text/javascript'></script>
+        <script src='scripts/jquery.spritely-0.6.js' type='text/javascript'></script>
+        <script src="scripts_flash/AC_RunActiveContent.js" type="text/javascript"></script>
+        <script src='scripts/script.js' type='text/javascript'></script>
 
-<!-- Google analytics -->
-<script type="text/javascript">
+    </head>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19331610-2']);
-  _gaq.push(['_trackPageview']);
+    <body onload="animacao()">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-function muda()
-{
-	//document.getElementById('cartao').innerHTML = "";
-	document.getElementById('cartao').style.display = "none";
-}
-</script>
-
-<!--
-<style type="text/css">
-	#cartao { 
-		position: absolute;
-		z-index:99;
-		top: 190px;
-		left: 500px;
-		width:435;
-		height:315px;
-	}
-</style>
-
--->
-
-<!--Inicio de Javascript--> 
-<script type="text/javascript">
-				$(function(){
-				
-					//})
-				});	
-			</script>
-<!--Fim de Javascript-->
-<style>
-</style>
+        <div id="main">
+            <div id="conteudo">
 
 
-<script>
-	function animacao(){
-				$('.imgs').animate({
-	    			left: '226px',
-	  			}, 1000);
+                <!-- Início da div cont_principal -->
+                <div id="cont_header">
+                    <!-- HEADER -->     
+                    <div id="header">
 
-	  			$('#texto1_1').animate({
-	  				top:'51px'
-	  			},1000);
-	  			$('#texto1_2').animate({
-	  				left:'79px'
-	  			},1000);
-	  			$('#texto1_3').animate({
-	  				top:'89px'
-	  			},1000);
-
-	  			$('#texto2_1').animate({
-	  				top:'51px'
-	  			},1000);
-	  			$('#texto2_2').animate({
-	  				left:'42px'
-	  			},1000);
-
-	  			$('#texto3_1').animate({
-	  				top:'40px'
-	  			},1000)
-	  			$('#texto3_2').animate({
-	  				left:'79px'
-	  			},1000);
-	  			$('#texto3_3').animate({
-	  				top:'76px'
-	  			},1000);
-
-	  			$('#texto4_1').animate({
-	  				top:'51px'
-	  			},1000);
-	  			$('#texto4_2').animate({
-	  				left:'107px'
-	  			},1000);
-	  			$('#texto4_3').animate({
-	  				top:'85px'
-	  			},1000);
+                        <div id="logo">
 
 
+                                </div>
+                                <div id="txt01_header" style="display:none">
+                                    A TECNOLOGIA A SERVIÇO DA FORMAÇÃO PROFISSIONAL
 
-	  			$("#bloco1").hover(
-				  function () {
-				 	$('#texto1_1').animate({
-	    				top: '30px',
-	  				}, 500)
-	  				.animate({
-		  				top:'51px'
-	  				},500);
-	  				$('#texto1_2').animate({
-	    				left: '35px',
-	  				}, 500)
-	  				.animate({
-		  				left:'79px'
-	  				},500);
-	  				$('#texto1_3').animate({
-	    				top: '101px',
-	  				}, 500)
-	  				.animate({
-		  				top:'89px'
-	  				},500); 
-				  },function(){}
-				);
-				$("#bloco2").hover(
-				  function () {
-				 	$('#texto2_1').animate({
-	    				top: '28px',
-	  				}, 500)
-	  				.animate({
-		  				top:'47px'
-	  				},500);
-	  				$('#texto2_2').animate({
-	    				left: '20px',
-	  				}, 500)
-	  				.animate({
-		  				left:'42px'
-	  				},500);
+                                </div>
 
-				  },function(){}
-				);
-				$("#bloco3").hover(
-				  function () {
-				 	$('#texto3_1').animate({
-	    				top: '20px',
-	  				}, 500)
-	  				.animate({
-		  				top:'40px'
-	  				},500);
-	  				$('#texto3_2').animate({
-	    				left: '35px',
-	  				}, 500)
-	  				.animate({
-		  				left:'79px'
-	  				},500);
-	  				$('#texto3_3').animate({
-	    				top: '94px',
-	  				}, 500)
-	  				.animate({
-		  				top:'76px'
-	  				},500); 
-				  },function(){}
-				);
-				$("#bloco4").hover(
-				  function () {
-				 	$('#texto4_1').animate({
-	    				top: '27px',
-	  				}, 500)
-	  				.animate({
-		  				top:'51px'
-	  				},500);
-	  				$('#texto4_2').animate({
-	    				left: '64px',
-	  				}, 500)
-	  				.animate({
-		  				left:'107px'
-	  				},500);
-	  				$('#texto4_3').animate({
-	    				top: '100px',
-	  				}, 500)
-	  				.animate({
-		  				top:'85px'
-	  				},500); 
-				  },function(){}
-				);
-					//$('#div_adind_01').click(function(){
-						
-						$('#txt01_header').fadeIn(5000);
-						
-					//})
-					//$('#div_adind_01').click(function(){
-						$("#foto_top").fadeIn(150);
-						 $('#foto_top').animate({
-							width:'200px',
-							height:'170px',
-							margin:'6px 3px',
-							opacity:'1'
-						},700)
-						 $('#logo').sprite({
-								fps:30,
-								no_of_frames:120,
-								on_frame: { 
-                                119: function(obj) { 
-									$(obj).goToFrame(65);
-                 
-                                }
-                            }              
-				})
 
-  			}
+                                <div id="area_aluno" style=""><a href="http://geralearning.geranegocio.com.br" target="_blank"><img src="imagens/ico_area_aluno.png" /></a></div>
 
-</script>
+
+                                <!-- MENU TOP -->     
+
+                                <div id="menu">
+                                    <ul>
+                                        <li><a href="index.html" class="btn_inicio"></a></li>
+                                        <li><a href="Javascript:void(0)" class="btn_01_on"></a></li>
+                                        <li><a href="demonstracao.html" class="btn_demo"></a></li>        
+                                        <li><a href="blogs.html" class="btn_02"></a></li>
+                                        <li><a href="aplicativos.html" class="aplicativos"></a></li>
+                                        <li><a href="institucional_01.html" class="btn_03"></a></li>
+                                        <li><a href="projetos.html" class="btn_04"></a></li>
+                                        <li><a href="parcerias.html" class="btn_05"></a></li>
+                                        <li><a href="contatos.html" class="btn_06"></a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                            <!-- FOTO TOP -->
+
+                            <div id="foto_top">
+                                <div id="myAlternativeContent_foto" style="display:none !important;">
+                                    <script type="text/javascript">
+                                        /*var flashvars = {};
+                                          var params = {};
+                                          params.quality = "best";
+                                          params.scale = "noscale";
+                                          params.wmode = "transparent";
+                                          var attributes = {};
+                                          swfobject.embedSWF("flash/foto_top.swf", "myAlternativeContent_foto", "185", "162", "8", false, flashvars, params, attributes);*/
+
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CONTEUDO HEADER -->
+
+
+                        <!-- CONTEUDO HOME -->
+
+                        <div id="cont_home">
+                            <div id="col_esq">
+                                <span class="tit_01">O que é o WiLivro?</span>
+                                <span class="area_txt_01">
+                                    Da parceria entre a Editora Ensinart e a empresa Geranegocio, especializada em desenvolvimento de softwares e cursos on-line, surgiu a Tecnologia WiLivro.
+                                    Na Tecnologia WiLivro, cabe à Geranegocio desenvolver os cursos e disponibilizar a plataforma de ensino a distância e à Editora Ensinart a produção dos livros didáticos e comercialização dos cursos on-line.
+                                    WiLivro associa o livro a um curso on-line, disponibilizando recursos tecnológicos que possibilitam a qualificação pela internet de forma individual (em casa, na empresa, no telecentro ou na lan house) 
+                                    ou de forma coletiva e presencial, através de programas e projetos, nos laboratórios das escolas e/ou telecentros.
+                                    A Tecnologia WiLivro (livro + licença do curso on-line) dá total flexibilidade ao treinando: pode-se adquirir conhecimento específico cursando apenas um módulo ou seguir o Itinerário Formativo, que é a realização 
+                                    sequencial de módulos. O Itinerário Formativo visa atingir um objetivo de qualificação voltado à formação profissional para o mercado de trabalho ou à montagem de um negócio próprio.
+                                </span>
+                                <br clear="all" />
+                                <div id="col_bottom">
+                                    <img src="imagens/logo_triad_bottom.png" />
+                                </div>
+                            </div>
+
+                            <div id="col_dir">
+                                <a href="demonstracao.php.html">
+                                    <div id="bloco1" class="blocos">
+                                        <div id="img_1" class="imgs"></div>         
+                                        <div class="textosP" id="texto1_1">Faça nossos</div>
+                                        <div class="textosG" id="texto1_2">CURSOS EXPRESS</div>
+                                        <div class="textosGB" id="texto1_3">GRATUITOS</div>
+                                    </div>
+                                </a>
+                                <a href="demonstracao.php.html#inclusao_digital">
+                                    <div id="bloco3" class="blocos">
+                                        <div id="img_3" class="imgs"></div>         
+                                        <div class="textosP" id="texto3_1">Veja as</div>
+                                        <div class="textosG" id="texto3_2">DEMONSTRAÇÕES</div>
+                                        <div class="textosGB" id="texto3_3">DOS CURSOS</div>
+                                    </div>
+                                </a>
+                                <a href="parcerias.php.html">
+                                    <div id="bloco4" class="blocos" style="border-bottom:none;">
+                                        <div id="img_4" class="imgs"></div>         
+                                        <div class="textosP" id="texto4_1">Seja uma</div>
+                                        <div class="textosG" id="texto4_2">INSTITUIÇÃO</div>
+                                        <div class="textosGB" id="texto4_3">PARCEIRA</div>
+                                    </div>
+                                </a>
+
+
+                                <!-- Fim do bloco do botão 04 -->
+
+                            </div>
+                            <br clear="all" />        
+                        </div>
+                        <!-- FIM DO CONTEUDO HOME -->
+
+                        <!-- Fim da div cont_principal -->
+                    </div> 
+
+                    <!-- Fim da div conteudo -->  
 
 
 
-</head>
-
-<body onload="animacao()">
-
-<div id="main">
-	<div id="conteudo">
-    
-
-
-        <!-- CARTAO DE NATAL -->
-<!--
-        <div id="cartao" >
-            <script type="text/javascript">
-                AC_FL_RunContent( 'codebase','http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0','name','banner_solidario','width','350','height','500','align','middle','id','banner_solidario','src','banner_solidario','quality','high','bgcolor','#0066cc','allowscriptaccess','sameDomain','pluginspage','http://www.macromedia.com/go/getflashplayer','wmode','transparent','movie','banner_solidario' ); //end AC code
-            </script><noscript>
-            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" name="banner_solidario" width="350" height="500" align="middle" id="banner_solidario">
-            <param name="allowScriptAccess" value="sameDomain" />
-            <param name="movie" value="banner_solidario.swf" />
-            <param name="quality" value="high" />
-            <param name="bgcolor" value="#0066cc" />
-            <param name="wmode" value="transparent" />
-            <embed src="http://www.wilivro.com.br/institucional/banner_solidario.swf" width="358" height="615" align="middle" quality="high" bgcolor="#0066cc" name="banner_solidario" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" />
-            </object>
-            </noscript>
-        </div> 
--->    
-    
-    
-
-<!-- Início da div cont_principal -->
-    <div id="cont_header">
-<!-- HEADER -->    	
-      <div id="header">
-      
-        <div id="logo">
-
-			<!--<div id="myAlternativeContent">
-				<script type="text/javascript">
-				var flashvars = {};
-				var params = {};
-				params.quality = "best";
-				params.scale = "noscale";
-				params.wmode = "transparent";
-				var attributes = {};
-				swfobject.embedSWF("flash/logo_top_v2.swf", "myAlternativeContent", "150", "150", "8", false, flashvars, params, attributes);
-				</script>
-			</div>-->
-
-		</div>
-        <div id="txt01_header" style="display:none">
-			A TECNOLOGIA A SERVIÇO DA FORMAÇÃO PROFISSIONAL
-			
-			<!--<div id="myAlternativeContent_titulo">
-				<script type="text/javascript">
-				var flashvars = {};
-				var params = {};
-				params.quality = "best";
-				params.scale = "noscale";
-				params.wmode = "transparent";
-				var attributes = {};
-				swfobject.embedSWF("flash/titulo_top.swf", "myAlternativeContent_titulo", "500", "45", "8", false, flashvars, params, attributes);
-				</script>
-			</div>-->
-		</div>
-        
-
-       <div id="area_aluno" style=""><a href="http://geralearning.geranegocio.com.br" target="_blank"><img src="imagens/ico_area_aluno.png" /></a></div>
-
-        
-<!-- MENU TOP -->    	
-        
-    		<div id="menu">
-    			<ul>
-					<li><a href="index.php.html" class="btn_inicio"></a></li>
-                    
-
-					<li><a href="Javascript:void(0)" class="btn_01_on"></a></li>
-
-
-					<li><a href="demonstracao.php.html" class="btn_demo"></a></li>        
-					<li><a href="blogs.php.html" class="btn_02"></a></li>
-					<li><a href="aplicativos.php.html" class="aplicativos"></a></li>
-					<li><a href="institucional_01.php.html" class="btn_03"></a></li>
-					<li><a href="projetos.php.html" class="btn_04"></a></li>
-					<li><a href="parcerias.php.html" class="btn_05"></a></li>
-					<li><a href="contatos.php.html" class="btn_06"></a></li>
-    			</ul>
-    		</div>      </div>
-<!-- FOTO TOP -->
-
-        <div id="foto_top">
-			<div id="myAlternativeContent_foto" style="display:none !important;">
-				<script type="text/javascript">
-				/*var flashvars = {};
-				var params = {};
-				params.quality = "best";
-				params.scale = "noscale";
-				params.wmode = "transparent";
-				var attributes = {};
-				swfobject.embedSWF("flash/foto_top.swf", "myAlternativeContent_foto", "185", "162", "8", false, flashvars, params, attributes);*/
-				
-				</script>
-			</div>
-		</div>
-    </div>
-<!-- CONTEUDO HEADER -->
-
-
-<!-- CONTEUDO HOME -->
-   
-    <div id="cont_home">
-        <div id="col_esq">
-          <span class="tit_01">O que é o WiLivro?</span>
-          <span class="area_txt_01">
-          Da parceria entre a Editora Ensinart e a empresa Geranegocio, especializada em desenvolvimento de softwares e cursos on-line, surgiu a Tecnologia WiLivro.
-          Na Tecnologia WiLivro, cabe à Geranegocio desenvolver os cursos e disponibilizar a plataforma de ensino a distância e à Editora Ensinart a produção dos livros didáticos e comercialização dos cursos on-line.
-          WiLivro associa o livro a um curso on-line, disponibilizando recursos tecnológicos que possibilitam a qualificação pela internet de forma individual (em casa, na empresa, no telecentro ou na lan house) 
-          ou de forma coletiva e presencial, através de programas e projetos, nos laboratórios das escolas e/ou telecentros.
-          A Tecnologia WiLivro (livro + licença do curso on-line) dá total flexibilidade ao treinando: pode-se adquirir conhecimento específico cursando apenas um módulo ou seguir o Itinerário Formativo, que é a realização 
-          sequencial de módulos. O Itinerário Formativo visa atingir um objetivo de qualificação voltado à formação profissional para o mercado de trabalho ou à montagem de um negócio próprio.
-          </span>
-          <br clear="all" />
-          <div id="col_bottom">
-            <img src="imagens/logo_triad_bottom.png" />
-          </div>
-        </div>
-
-        <div id="col_dir">
-        	<a href="demonstracao.php.html">
-				<div id="bloco1" class="blocos">
-					<div id="img_1" class="imgs"></div>					
-					<div class="textosP" id="texto1_1">Faça nossos</div>
-					<div class="textosG" id="texto1_2">CURSOS EXPRESS</div>
-					<div class="textosGB" id="texto1_3">GRATUITOS</div>
-				</div>
-			</a>
-			<a href="demonstracao.php.html#inclusao_digital">
-				<div id="bloco3" class="blocos">
-						<div id="img_3" class="imgs"></div>					
-						<div class="textosP" id="texto3_1">Veja as</div>
-						<div class="textosG" id="texto3_2">DEMONSTRAÇÕES</div>
-						<div class="textosGB" id="texto3_3">DOS CURSOS</div>
-				</div>
-			</a>
-			<a href="parcerias.php.html">
-				<div id="bloco4" class="blocos" style="border-bottom:none;">
-					<div id="img_4" class="imgs"></div>					
-					<div class="textosP" id="texto4_1">Seja uma</div>
-					<div class="textosG" id="texto4_2">INSTITUIÇÃO</div>
-					<div class="textosGB" id="texto4_3">PARCEIRA</div>
-				</div>
-			</a>
-          
-
-<!-- Fim do bloco do botão 04 -->
-
-        </div>
-<br clear="all" />        
-    </div>
-<!-- FIM DO CONTEUDO HOME -->
-
-<!-- Fim da div cont_principal -->
-	</div> 
-
-<!-- Fim da div conteudo -->  
-
-
-
-<div id="conteudo_rdp">
-    <div id="rdp">
-      <img src="imagens/txt_rdp.jpg" />
-    </div>
-</div>
+                    <div id="conteudo_rdp">
+                        <div id="rdp">
+                            <img src="imagens/txt_rdp.jpg" />
+                        </div>
+                    </div>
 
 
 
 
 
-</div>
-<!-- Fim da main -->	
+                </div>
+                <!-- Fim da main -->  
 
 
 
 
-</body>
-</html>
+            </body>
+        </html>
 
